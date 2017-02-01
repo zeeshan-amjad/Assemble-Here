@@ -15,9 +15,9 @@ main proc
 	mov BL, C
 
 	pushloop:
-		mov AL, [DI]
 		cmp BYTE PTR[DI], '$'
 		je poploop
+		mov AL, [DI]
 		push AX
 		inc DI
 		inc BL
